@@ -1,8 +1,9 @@
 # Fawry's Internship Task
 
 ## note: 
-**all exceptions have been grouped in ExceptionGrouped with CustomNames**
-**for the expiry date, there are two instantiation of dates. one with +3 to the "Now" date (3 Days left to expire), and one with -2 from the "Now" Date (Expired for 2 days)**
+**All exceptions have been grouped in *ExceptionGrouped* folder with CustomNames**
+**For the expiry date, there are two instantiation of dates. one with +3 to the "Now" date (3 Days left to expire), and one with -2 from the "Now" Date (Expired for 2 days)**
+**Testing Java file is Called *Demo***
 
 ## In-Code Samples:
 **Sample Test Data Overview**
