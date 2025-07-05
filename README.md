@@ -1,9 +1,11 @@
 # Fawry's Internship Task
 
+## note: 
+**all exceptions have been grouped in ExceptionGrouped with CustomNames**
+
 ## In-Code Samples:
 🧪 Sample Test Data Overview
 The following test setup demonstrates various scenarios using different product types and customer profiles:
-
 Products:
 🧀 Cheese: Includes both a valid (not expired) and an expired cheese product.
 📺 TV: A high-value item with limited quantity.
@@ -92,5 +94,5 @@ No shipment/receipt printed.
 
 Input: Customer's cart is empty.
 Expected Result:
-IllegalArgumentException thrown.
+CartEmptyException thrown.
 No shipment/receipt printed.
