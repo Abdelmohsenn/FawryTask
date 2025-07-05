@@ -1,11 +1,13 @@
 # Fawry's Internship Task
 
 ## note: 
-**All exceptions have been grouped in *ExceptionGrouped* folder with CustomNames**
+**All exceptions have been grouped in *ExceptionGrouped* folder with CustomNames**.
 
-**For the expiry date, there are two instantiation of dates. one with +3 to the "Now" date (3 Days left to expire), and one with -2 from the "Now" Date (Expired for 2 days)**
+**For the expiry date, there are two instantiation of dates. one with +3 to the "Now" date (3 Days left to expire), and one with -2 from the "Now" Date (Expired for 2 days)**.
 
-**Testing Java file is Called *Demo***
+**Testing Java file is Called *Demo***.
+
+**In each "productName".java file, the main file is used for merely tasting each product on its own.**
 
 ## In-Code Samples:
 **Sample Test Data Overview**
