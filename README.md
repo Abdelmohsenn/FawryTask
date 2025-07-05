@@ -31,8 +31,7 @@ Expected Result:
 <img width="534" alt="Screenshot 2025-07-05 at 5 31 50 PM" src="https://github.com/user-attachments/assets/9c1f08ed-7f9e-403b-872f-0988d74848e6" />
 
 ### 1st Case Console Output:
-
-<img width="413" alt="Screenshot 2025-07-05 at 5 09 25 PM" src="https://github.com/user-attachments/assets/979e7d56-cb05-4363-a431-996ecbec6b3c" />
+<img width="381" alt="Screenshot 2025-07-05 at 5 39 24 PM" src="https://github.com/user-attachments/assets/b38d4bc8-8eac-418f-9475-4d7606fbc6de" />
 
 
 ## 2. Out of Stock
