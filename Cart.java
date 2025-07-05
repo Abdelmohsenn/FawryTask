@@ -41,7 +41,7 @@ public class Cart {
         Item item = new Item(product, quan);
 
         if (item.getRemainingQuantity() < 0){
-            System.out.println("Not enough stock to add the following product " + product.getName() + ". only the available quantity has been added!"); // check the GroupedFile for Exceptions
+            System.out.println("Not enough stock to add the following product: " + product.getName() + "!"); // check the GroupedFile for Exceptions
         } else {
             items.add(item);
         }
