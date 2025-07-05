@@ -1,21 +1,28 @@
 # Fawry's Internship Task
 
 ## note: 
-**all exceptions have been grouped in ExceptionGrouped with CustomNames**
+**All exceptions have been grouped in *ExceptionGrouped* folder with CustomNames**
+
+**For the expiry date, there are two instantiation of dates. one with +3 to the "Now" date (3 Days left to expire), and one with -2 from the "Now" Date (Expired for 2 days)**
+
+**Testing Java file is Called *Demo***
 
 ## In-Code Samples:
-🧪 Sample Test Data Overview
+**Sample Test Data Overview**
 The following test setup demonstrates various scenarios using different product types and customer profiles:
-Products:
-🧀 Cheese: Includes both a valid (not expired) and an expired cheese product.
-📺 TV: A high-value item with limited quantity.
-📱 Mobile: An expensive smartphone with fractional weight.
-🎫 MobileScratchCard: A basic recharge card.
-🍪 Biscuit: A low-cost, perishable snack with a valid expiry date.
-Customers:
-💰 richCustomer: Has a large balance and can afford any product.
-🧍‍♂️ poorCustomer: Has minimal balance, likely to trigger InsufficientBalanceException.
-🛒 emptyCartCustomer: Starts with an empty cart, used to test edge cases like checking out an empty cart.
+**Products:**
+
+* 🧀 *Cheese*
+* 📺 *TV*
+* 📱 *Mobile*
+* 🎟️ *MobileScratchCard*
+* 🍪 *Biscuit*
+
+**Customers:**
+- richCustomer: Has a large balance and can afford any product.
+- poorCustomer: Has minimal balance, likely to trigger InsufficientBalanceException.
+- emptyCartCustomer: Starts with an empty cart, used to test edge cases like checking out an empty cart.
+- 
 These samples are used to simulate normal purchases, expired product handling, insufficient funds, and empty cart scenarios.
 
 <img width="780" alt="Screenshot 2025-07-05 at 5 30 31 PM" src="https://github.com/user-attachments/assets/376fb6d5-56a7-47f4-a58b-37300b60dd28" />
@@ -23,9 +30,10 @@ These samples are used to simulate normal purchases, expired product handling, i
 ## 1. Successful Checkout
 
 Input: Cart contains only available & non-expired products, customer balance >= total.
+
 Expected Result: 
-  1. Stock decremented,
-  2.Balance deducted.
+  1. Stock decremented for the chosen product,
+  2. Customer Balance deducted.
   3. Shipment and receipt printed.
      
 
@@ -40,10 +48,12 @@ Expected Result:
 
 
 Input: Cart contains a product with quantity > available stock.
+
 Expected Result:
-OutOfStockException thrown.
-No changes to stock or balance.
-No shipment/receipt printed.
+
+1. OutOfStockException thrown.
+2. No changes to stock or balance.
+3. No shipment/receipt printed.
 
 ### 2nd Case Code Example:
 <img width="604" alt="Screenshot 2025-07-05 at 5 32 33 PM" src="https://github.com/user-attachments/assets/3409873e-3f32-42c4-9075-537280637e87" />
@@ -62,10 +72,12 @@ No shipment/receipt printed.
 <img width="759" alt="Screenshot 2025-07-05 at 5 35 58 PM" src="https://github.com/user-attachments/assets/baca3f91-2365-426d-88eb-4312a91021b2" />
 
 Input: Cart contains at least one expired product.
+
 Expected Result:
-All expired product names listed in error.
-No changes to stock or balance.
-No shipment/receipt printed.
+
+1. All expired product names listed in error.
+2. No changes to stock or balance.
+3. No shipment/receipt printed.
 
 ## 4. Insufficient Balance
 
@@ -77,10 +89,12 @@ No shipment/receipt printed.
 
 
 Input: Customer's balance is less than the total (subtotal + shipping).
+
 Expected Result:
-InsufficientBalanceException thrown.
-No changes to stock or balance.
-No shipment/receipt printed.
+
+1. InsufficientBalanceException thrown.
+2. No changes to stock or balance.
+3. No shipment/receipt printed.
 
 ## 5. Empty Cart
 
@@ -93,6 +107,8 @@ No shipment/receipt printed.
 <img width="381" alt="Screenshot 2025-07-05 at 5 38 14 PM" src="https://github.com/user-attachments/assets/4916180c-df10-4aac-b31f-f34bfb153b68" />
 
 Input: Customer's cart is empty.
+
 Expected Result:
-CartEmptyException thrown.
-No shipment/receipt printed.
+
+1. CartEmptyException thrown.
+2. No shipment/receipt printed.
