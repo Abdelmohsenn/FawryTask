@@ -7,7 +7,7 @@
 
 **Testing Java file is Called *Demo***.
 
-** In each "productName".java file, the main file is used for merely tasting each product on its own.
+**In each "productName".java file, the main file is used for merely tasting each product on its own.**
 
 ## In-Code Samples:
 **Sample Test Data Overview**
