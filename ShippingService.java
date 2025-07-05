@@ -11,6 +11,7 @@ public class ShippingService { // shipping service returning the total weight an
                     quantity, item.getName(), itemTotalWeight);
             totalWeight += itemTotalWeight;
         }
+
         System.out.printf("Total package weight %.2fkg%n", totalWeight);
         return totalWeight;
     }

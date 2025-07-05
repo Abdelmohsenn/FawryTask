@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class CheckoutClass {
+
     public void checkout(Cart cart, Customer customer) {
         if (cart == null || cart.isEmpty()) { // first error when the cart is null
             throw new CartEmptyException("Cart is empty. Cannot checkout.");

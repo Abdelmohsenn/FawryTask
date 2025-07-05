@@ -35,11 +35,11 @@ public class Cart {
 
     }
 
+
     private Vector<Item> items = new Vector<>(); // Vector for all items in the cart
     private int shippingcost;
     public void add(ProductClass product, int quan){
         Item item = new Item(product, quan);
-
         if (item.getRemainingQuantity() < 0){
             System.out.println("Not enough stock to add the following product: " + product.getName() + "!"); // check the GroupedFile for Exceptions
         } else {

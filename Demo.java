@@ -53,6 +53,7 @@ public class Demo {
             System.out.println(e);
         }
 
+
         System.out.println("\n======== Test 3: Expired Product Exception ========");
         Cart cart3 = new Cart();
         cart3.add(expiredCheese, 1);
