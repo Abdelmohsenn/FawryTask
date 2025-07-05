@@ -2,20 +2,23 @@
 
 ## note: 
 **all exceptions have been grouped in ExceptionGrouped with CustomNames**
+**for the expiry date, there are two instantiation of dates. one with +3 to the "Now" date (3 Days left to expire), and one with -2 from the "Now" Date (Expired for 2 days)**
 
 ## In-Code Samples:
-🧪 Sample Test Data Overview
+**Sample Test Data Overview**
 The following test setup demonstrates various scenarios using different product types and customer profiles:
-Products:
-🧀 Cheese: Includes both a valid (not expired) and an expired cheese product.
-📺 TV: A high-value item with limited quantity.
-📱 Mobile: An expensive smartphone with fractional weight.
-🎫 MobileScratchCard: A basic recharge card.
-🍪 Biscuit: A low-cost, perishable snack with a valid expiry date.
-Customers:
-💰 richCustomer: Has a large balance and can afford any product.
-🧍‍♂️ poorCustomer: Has minimal balance, likely to trigger InsufficientBalanceException.
-🛒 emptyCartCustomer: Starts with an empty cart, used to test edge cases like checking out an empty cart.
+**Products:**
+
+* 🧀 *Cheese*
+* 📺 *TV*
+* 📱 *Mobile*
+* 🎟️ *MobileScratchCard*
+* 🍪 *Biscuit*
+
+**Customers:**
+- richCustomer: Has a large balance and can afford any product.
+- poorCustomer: Has minimal balance, likely to trigger InsufficientBalanceException.
+- emptyCartCustomer: Starts with an empty cart, used to test edge cases like checking out an empty cart.
 These samples are used to simulate normal purchases, expired product handling, insufficient funds, and empty cart scenarios.
 
 <img width="780" alt="Screenshot 2025-07-05 at 5 30 31 PM" src="https://github.com/user-attachments/assets/376fb6d5-56a7-47f4-a58b-37300b60dd28" />
@@ -24,8 +27,8 @@ These samples are used to simulate normal purchases, expired product handling, i
 
 Input: Cart contains only available & non-expired products, customer balance >= total.
 Expected Result: 
-  1. Stock decremented,
-  2.Balance deducted.
+  1. Stock decremented for the chosen product,
+  2. Customer Balance deducted.
   3. Shipment and receipt printed.
      
 
