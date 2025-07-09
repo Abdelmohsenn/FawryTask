@@ -1,4 +1,4 @@
-# Fawry's Internship Task
+# OOP e-commerce Task using Java
 
 ## note: 
 **All exceptions have been grouped in *ExceptionGrouped* folder with CustomNames**.
